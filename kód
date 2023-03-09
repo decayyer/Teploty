@@ -2,7 +2,7 @@
 using Spectre.Console;
 using System.Globalization;
 bool otazka = true;
-int[] teplota = new int[(DateTime.DaysInMonth(2023, 3))];
+string[] teplota = new string[(DateTime.DaysInMonth(2023, 3))];
 
 while (otazka = true)
 {
