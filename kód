@@ -1,23 +1,37 @@
 
 using Spectre.Console;
 using System.Globalization;
+bool otazka = true;
+int[] teplota = new int[(DateTime.DaysInMonth(2023, 3))];
 
-string[] days = new string[DateTime.DaysInMonth(2023, 12)];
-for (int i = 1; i < (DateTime.DaysInMonth(2023, 12) + 1); i++)
+while (otazka = true)
 {
-    days[i-1] = i.ToString();
-}
+    string[] days = new string[DateTime.DaysInMonth(2023, 3)+1];
+    for (int i = 1; i < (DateTime.DaysInMonth(2023, 3) + 2); i++)
+    {
+        if (i == DateTime.DaysInMonth(2023, 3) + 1)
+        {
+            days[i-1] = "vyhodnotit";
+        }
+        else
+        {
+            days[i - 1] = i.ToString();
+        }
+    }
 
-var day = AnsiConsole.Prompt(
-    new SelectionPrompt<string>()
-        .Title("Vyber den v měsíci")
-        .PageSize(7)
-        .MoreChoicesText("[grey](Pohybuj se šipkami nahoru a dolů pro odkrytí víve měsíců)[/]")
-        .AddChoices(days)
-);
-AnsiConsole.WriteLine($"vybral jsi den číslo: {day}");
-if (day == "1")
-{
-    string denJedna = AnsiConsole.Ask<string>("Zadej teplotu tohoto dne:");
-    
+    var day = AnsiConsole.Prompt(
+        new SelectionPrompt<string>()
+            .Title("Vyber den v měsíci")
+            .PageSize(7)
+            .MoreChoicesText("[grey](Pohybuj se šipkami nahoru a dolů pro odkrytí více měsíců)[/], ")
+            .AddChoices(days)
+    );
+   
+    int den = int.Parse(day);
+    if(den == 1)
+    {
+        Console.WriteLine("Vybral jsi den číslo: " + day);
+        AnsiConsole.Ask<int>("Zadej telptu:");
+        teplota[0] = Console.ReadLine();
+    }
 }
