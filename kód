@@ -1,236 +1,32 @@
+Dictionary<int, int> teploty = new Dictionary<int, int>();
 
-using Spectre.Console;
-
-bool otazka = true;
-string[] teplota = new string[(DateTime.DaysInMonth(2023, 3))];
-
-while (otazka = true)
+bool cykl = true;
+for (int den = 1; den <= 31; den++)
 {
-    string[] dny = new string[DateTime.DaysInMonth(2023, 3) + 1];
-    for (int i = 1; i < (DateTime.DaysInMonth(2023, 3) + 2); i++)
+    while (cykl == true)
     {
-        if (i == DateTime.DaysInMonth(2023, 3) + 1)
+        Console.WriteLine("Zadej teplotu pro den číslo: " + den);
+        if (int.TryParse(Console.ReadLine(), out int teplota))
         {
-            dny[i - 1] = "vyhodnotit";
+            teploty[den] = teplota;
+            Console.Clear();
+            Console.WriteLine("Chceš vyhodnotit zadané teploty? (ano/ne)");
+            string otazka = Console.ReadLine();
+            if (otazka.Equals("ano"))
+            {
+                cykl = false;
+            }
+            else
+            {
+                den ++;
+            }
         }
         else
         {
-            dny[i - 1] = i.ToString();
+            Console.WriteLine("Neplatný vstup, zkus to znovu.");
         }
     }
-
-    var vyberDnu = AnsiConsole.Prompt(
-        new SelectionPrompt<string>()
-            .Title("Vyber den v měsíci")
-            .PageSize(7)
-            .MoreChoicesText("[grey](Pohybuj se šipkami nahoru a dolů pro odkrytí více měsíců)[/], ")
-            .AddChoices(dny)
-    );
-
-    int den = int.Parse(vyberDnu);
-    switch (den)
-    {
-        case 1:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[0] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 2:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[1] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 3:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[2] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 4:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[3] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 5:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[4] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 6:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[5] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 7:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[6] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 8:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[7] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 9:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[8] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 10:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[9] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 11:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[10] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 12:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[11] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 13:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[12] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 14:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[13] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 15:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[14] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 17:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[16] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 18:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[17] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 19:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[18] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 20:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[19] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 21:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[20] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 22:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[21] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 23:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[22] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 24:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[23] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 25:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[24] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 26:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[25] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 27:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[26] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 28:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[27] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 29:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[28] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 30:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[29] = Console.ReadLine();
-            Console.Clear();
-            break;
-        case 31:
-            Console.WriteLine("Vybral jsi den číslo: " + vyberDnu);
-            AnsiConsole.Ask<int>("Zadej teplotu:");
-            teplota[30] = Console.ReadLine();
-            Console.Clear();
-            break;
-     
-        default:
-            break;
-    }
-
-
-}
-int soucet = 0;
-double prumer = 0;
-for (int i = 0; i < teplota.Length; i++)
-{
-    soucet += int.Parse(teplota[i]);
 }
 
-soucet = soucet / teplota.Length;
-
-Console.WriteLine("Průměr všech teplot je: " + prumer);
-string max = teplota.Max();
-Console.WriteLine("Nejvyšší teplota je: " + max + "°C");
-string min = teplota.Min();
-Console.WriteLine("Nejnižší teplota je: " + min + "°C");
-
-    }
-}
+double prumer = teploty.Values.Average();
+Console.WriteLine("Průměrná teplota pro zadané dny je: " + prumer);
