@@ -1,0 +1,17 @@
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\bin\Debug\net6.0\Teploty bettah.exe
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\bin\Debug\net6.0\Teploty bettah.deps.json
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\bin\Debug\net6.0\Teploty bettah.runtimeconfig.json
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\bin\Debug\net6.0\Teploty bettah.dll
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\bin\Debug\net6.0\Teploty bettah.pdb
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\bin\Debug\net6.0\Spectre.Console.dll
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\obj\Debug\net6.0\Teploty bettah.csproj.AssemblyReference.cache
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\obj\Debug\net6.0\Teploty bettah.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\obj\Debug\net6.0\Teploty bettah.AssemblyInfoInputs.cache
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\obj\Debug\net6.0\Teploty bettah.AssemblyInfo.cs
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\obj\Debug\net6.0\Teploty bettah.csproj.CoreCompileInputs.cache
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\obj\Debug\net6.0\Teploty bettah.csproj.CopyComplete
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\obj\Debug\net6.0\Teploty bettah.dll
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\obj\Debug\net6.0\refint\Teploty bettah.dll
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\obj\Debug\net6.0\Teploty bettah.pdb
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\obj\Debug\net6.0\Teploty bettah.genruntimeconfig.cache
+C:\Users\daniel.kadlec\OneDrive\Plocha\Teploty bettah\Teploty bettah\obj\Debug\net6.0\ref\Teploty bettah.dll

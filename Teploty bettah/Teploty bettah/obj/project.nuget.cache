@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "1IM6SNPgwS+CluIbH6zuhaktwd5d+zDm2Q+pvJr2UkJV08nmMY6HeC9gJJH27jl9Ea0kDD9gpoWTy0sq9NsHUA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\daniel.kadlec\\OneDrive\\Plocha\\Teploty bettah\\Teploty bettah\\Teploty bettah.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\daniel.kadlec\\.nuget\\packages\\spectre.console\\0.46.0\\spectre.console.0.46.0.nupkg.sha512",
+    "C:\\Users\\daniel.kadlec\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
+  ],
+  "logs": []
+}
